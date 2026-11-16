@@ -1,0 +1,13 @@
+mkdir -p ~/lab && cd ~/lab
+touch a.txt b.txt notes.txt
+cp a.txt a_copy.txt
+mv b.txt renamed.txt
+rm -i a_copy.txt            # interactive prompt
+mkdir demo && touch demo/x.txt
+rm -r demo                  # recursive delete
+echo -e "line1\nerror here\nline3" > sample.txt
+cat sample.txt; head -n 2 sample.txt; tail -n 1 sample.txt
+less /etc/passwd            # q to quit
+find ~ -name "*.txt"
+grep -n "error" sample.txt
+grep -ri "root" /etc/passwd

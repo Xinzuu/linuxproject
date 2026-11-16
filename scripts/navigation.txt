@@ -1,0 +1,7 @@
+pwd
+cd /etc && cd ../var        # absolute vs relative
+cd ~ && cd -
+mkdir -p project/src/app/logs
+ls -R project
+ls /etc | head; ls /var/log | head; ls /tmp
+tree project                # sudo apt install tree

@@ -1,0 +1,13 @@
+ps aux | head
+top                         # q to quite
+df -h
+free -m
+uptime
+sudo adduser testuser
+sudo groupadd devteam
+sudo usermod -aG devteam testuser
+id testuser
+touch secret.sh
+chmod 755 secret.sh        
+ls -l secret.sh
+sudo chown testuser:devteam secret.sh

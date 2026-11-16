@@ -1,0 +1,9 @@
+ls -l > artifacts/listing.txt
+echo "second entry" >> artifacts/listing.txt
+ls /nonexistent 2> artifacts/errors.log
+ls /etc /nonexistent > artifacts/out.txt 2> artifacts/err.txt
+ps aux | grep ssh
+cat /etc/passwd | cut -d: -f1 | sort | uniq
+ps aux | awk '{print $1}' | sort | uniq -c | sort -nr
+grep -c "bash" /etc/passwd
+df -h | awk 'NR>1 {print $5, $6}'
